@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Science Fair/2021</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+  -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.button {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    margin: 5px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+.row {
+    flex-direction: column;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+.navbar a {
+    float: none;
+    width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Hello, welcome to our Science Fair!</h1>
+    <p>Avar Education Annual Science Fair</p>
+</div>
+
+<div class="navbar">
+    <a href="file:///C:/Users/USER/Desktop/E-Os_1/Users/Business/Avar/Science%20Fair/Calendar.html">Calendar</a>
+    <a href="https://www.youtube.com/">Youtube</a>
+    <a href="https://www.alibaba.com">Alibaba</a>
+    <a href="https://www.amazon.com" class="right">Amazon</a>
+</div>
+
+<div class="row">
+    <div class="side">
+    <h2>About Me</h2>
+    <h5>Avatar of me:</h5>
+    <img src="https://www.carmel.school.nz/wp-content/uploads/2020/12/1.jpg" class="fakeimg" style="height:200px;">
+    <p>I'm AVAR Premium. I'm a citizen scientist contributing scientific works. I contribute for Zooniverse, cs50, Github and MIT(Scratch)</p>
+    <div>
+    <button class="button" onclick=rules() style="height:60px;">Terms and Conditions</button>
+    <button class="button" style="height:60px;" onclick=content()>Content</button>
+    <button type="button" class="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Date and Time.</button>
+    <h3>Questions you may ask:</h3>
+    <button class="button" onclick=one() style="height:60px;">Where can you see me?</button>
+    <button class="button" onclick=rules() style="height:60px;">What are the Rules?</button>
+    <button class="button" onclick=content() style="height:60px;">What are the contents?</button>
+    <button class="button" onclick=two() style="height:60px;">Why did you make this website?</button>
+    <button class="button" onclick=three() style="height:60px;">Why do I put links above?</button>
+    <h3>Places Where You can see me</h3>
+    <button class="button" onclick="document.location='https://www.youtube.com/channel/UCgdAc0KAwyHOzipGuLO5MjQ'"; style="height:60px;">My YouTube Channel</button>
+    <button class="button" onclick="document.location='https://www.zooniverse.org'"; style="height:60px;">Zooniverse</button>
+    <button class="button" onclick="document.location='https://www.scratch.mit.edu'"; style="height:60px;">Scratch</button>
+    <button class="button" onclick="document.location='https://www.github.com'"; style="height:60px;">Github</button>
+    <button class="button" onclick="document.location='https://discord.gg/MpvKegcQ'"; style="height:60px;">Discord</button>
+    <h3>Tags</h3>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51H75XrXj-L.jpg" class="fakeimg" style="height:200px;">
+    <h4>Help Kids go from browsing to building!</h4>
+    <p>These days, computer science may seem a bad sunject to you because your kids may be obsessed with a gadget but, if you can balance it, it'll be an exciting Subject!</p>
+    <p>As you see, everyone is just 'browsing', so, your kids have to opportunity to build!</p>
+    <p>They can build their own computers! With raspberry pi, or the arduino!</p>
+    <h4>Make your environment Clean!</h4>
+    <img src="https://cdn.britannica.com/42/91642-050-332E5C66/Keukenhof-Gardens-Lisse-Netherlands.jpg" class="fakeimg" style="height:200px;">
+    <p>It's not that hard, you can just do it in your own balcony or your garden!</p>
+    <h3>Latest News from me!</h3>
+    <h4>From Zooniverse!</h4>
+    <img src="https://planethunters.files.wordpress.com/2018/12/ph-new_logo_new.jpg?w=640 class="fakeimg" style="height:200px;">
+    <p>Hello Planet Huntees, I hope you’re all having a lovely week! Two weeks ago an exciting new two-planet system that was discovered via Planet Hunters TESS was published. We wrote a short blog post explaining the system here and NASA, CNN, and the University of Oxford published articles discussing the discovery. Thank you to everyone for taking part in the search for planets and for enabling discoveries like this one!</>
+    <ol>
+        <li><b>NASA Article-</b><a href="https://www.nasa.gov/feature/citizen-scientists-discover-two-gaseous-planets-around-a-bright-sun-like-star">Link</a></li>
+        <li><b>CNN Article-</b><a href="https://edition.cnn.com/2021/06/22/world/exoplanets-nasa-citizen-science-scn/index.html">Link</a></li>
+        <li><b>University of Oxford Article-</b><a href="https://www.physics.ox.ac.uk/news/citizen-scientists-identify-nearby-two-planet-system">Link</a></li>
+    </ol>
+    <p>In other news, thank you for classifying all of the Sector 36 data. The newest TESS sector, Sector 37, is now available and comprises of 20,000 targets that were observed from 2 April to 28 April 2021. Some lightcurves show eclipsing binaries, some show variable stars or stellar outburst, and, of course, some contain planets. What kind of planets will we find in this part of the sky? A new Earth-like planet? A multi-planet system?</p>
+    <button class="button" onclick="document.location='https://www.zooniverse.org/projects/nora-dot-eisner/planet-hunters-tess?utm_source=Newsletter&utm_medium=Email&utm_campaign=pht22jun2021'">Join the Planet Hunters!</button>
+    <h4>The New Science App's coming!</h4>
+    <img src="https://www.educationalappstore.com/images/best-computer-science-apps.png" class="fakeimg" style="height:200px;"
+    <p>Will include Math formulas, tables, facts, calculators, links and databases!</p>
+    <p>Coming by September 2021!</p>
+    </div>
+    <p id="demo"></p>
+    </div>
+    <div class="main">
+    <h2>Best Educational Websites for 2021:</h2>
+    <h5>Other Websites are mentioned below the line.</h5>
+    <img src="https://ctfimages.intoglobal.com/xw2h6mjophtz/731sOVK2X4DrG83SK4jXAf/395ba54e3dc059a2fbb5b1fa5ca33cf3/Contentful_-_Campus_LifeUOM.jpg" alt="About The University of Manchester" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg" data-noaft="1" style="width: 500px; height: 300px;">
+    <p><a href = "http://www.academicearth.org">Academic Earth</a></p>
+    <p><a href = "http://www.archive.org">Internet Archive</a></p>
+    <p><a href = "http://www.bigthink.com">Big Think</a></p>
+    <p><a href = "http://www.edx.org">Edx</a></p>
+    <p><a href = "http://www.courser.org">Coursera</a></p>
+    <p><a href = "http://www.brightstorm.com">Brightstorm</a></p>
+    <p><a href = "http://www.cosmolearning.com">CosmoLearning</a></p>
+    <p><a href = "http:/www.thefutureschannel.com">Futureschannel</a></p>
+    <p>We highly recommend Edx and Coursera because they offer a variety of courses and projects, discussions, grades and give us knowledge that we deserve.</p>
+    <p>__________________________________________________________________________</p>
+    <h3>Recommended by my experience:</h3>
+    <br>
+    <p><a href = "http://www.ixl.com">Ixl</a></p>
+    <p><a href = "http://www.zooniverse.org">Zooniverse</a></p>
+    <p><a href = "https://www.khanacademy.org/">Khan Academy</a></p>
+    <p><a href = "http://www.dk.com/">Dk</a></p>
+    <p><a href = "http://www.w3schools.com">w3 Schools</a></p>
+    <p><a href = "http://www.code.org">Code.org</a></p>
+    <h2>Best Universities:</h2>
+    <img src="https://180dc.org/wp-content/uploads/2020/06/Manchester-Hero3.jpg" alt="Manchester" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg data-noaft="1" style="width: 500px; height: 300px;">
+    <p>Cambridge</p>
+    <p>Oxford</p>
+    <p>Harvard</p>
+    <p>MIT</p>
+    <p>University of London</p>
+    <p>If you want to learn anytime, join edx or coursera. The links are above!</p>
+    <h2>So, what is Science?</h2>
+    <h5>The definition explained</h5>
+    <img src="https://www.domyassignmentpro.com/assets/images/sciencebanner.jpg" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg" data-noaft="1" style="width: 500px; height: 300px;">
+    <article>
+    <p>    Science, is the study of the world, including us. Everything is connected with it, including history and geography because, science is the fundamental subject. If you don't know science, how will you know the outside world and even your own environment?</p>
+    <p>    Actually,  everything is science, even the history of Earth. It's exciting to know about science because it's endless but, it may be quite complicated. Therefore, people usually think science is difficult and impossible because they think that they need special equipment that they don't have. But, it's quite the opposite. You can perform simple experiments and learn more about science, then. So, what are the benefits? First, they'll know all about their environment. Next, they'll know the advantages and disadvantages of it. Finally, it can even help your career, such as a scientist, an engineer or a weather forecaster.</p> 
+    <p>    Now, you know what science is. So, you should no longer fell uneasy  about it. If you learn science, you can learn everything such as history, geography or everything else.</p>
+    </article>
+    <h2>The Art of Science</h2>
+    <h5>Fields of science</h5>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Disciplines_mind_map.jpg" alt="List of academic fields" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg" data-noaft="1" style="width: 500px; height: 300px;">
+    <p>Science, is the theory of understanding. It's connected with everything, even history and geography but math, is the basis of science.</p>
+    <ol>
+        <h5>Fields of Science:</h5>
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Biology</li>
+        <li>Mathematics</li>
+        <li>Geology</li>
+        <li>Botany</li>
+        <li>Anatomy</li>
+        <li>Zoology</li>
+        <li>Social Studies</li>
+    </ol>
+    <h2>Visual Aids</h2>
+    <img src="https://st2.depositphotos.com/1763191/11840/v/950/depositphotos_118407944-stock-illustration-science-equipment-with-microscope-and.jpg" alt="Science equipment with microscope and beakers" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg" data-noaft="1" style="width: 500px; height: 300px;">
+    <ol>
+        <p>Microscpe</p>
+        <p>Torso</p>
+        <p>Electrical circuit</p>
+        <p>Globe</p>
+        <p>Telescope</p>
+        <p>Binoculars</p>
+        <p>Rock specimens</p>
+        <p>Ph indicators</p>
+        <p>Monoculars</p>
+        <p>Micro: Bit</p>
+    </ol>
+    <p>Science is very exciting until, you stop trying it. So, these equipments will help you make you visual sense better.👨‍🔬 </p>
+    <h2>Best Museums to Visit</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Interior_view_-_Swedish_Museum_of_Natural_History_-_Stockholm%2C_Sweden_-_DSC00649.JPG/1200px-Interior_view_-_Swedish_Museum_of_Natural_History_-_Stockholm%2C_Sweden_-_DSC00649.JPG" alt="natural history museum" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg" data-noaft="1" style="width: 500px; height: 300px;">
+    <ol>
+        <li>The National Archaeological Museum, Greece</li>
+        <li>The National Palace Museum, Taiwan</li>
+        <li>The State Hermitage Museum, Russia</li>
+        <li>The Natural History Museum, London</li>
+        <li>The Louvre, Paris</li>
+        <li>The British Museum, London</li>
+    </ol>
+    <h2>Best apps for Programming</h2>
+    <img src="https://d1psgljc389n8q.cloudfront.net/discussions/posts/pJfxXRttq" alt="Coding" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg" data-noaft="1" style="width: 500px; height: 300px;">
+    <ol>
+        <li>Scratch-3</li>
+        <li>Python IDLE</li>
+        <li>Visual Studio Code</li>
+    </ol>
+    <h2>Interactive Quizzes</h2>
+    <img src="https://cf.quizizz.com/game/img/share/quizizz_share1.png" alt="Quizizz" jsname="HiaYvf" jsaction="load:XAeZkd;" class="fakeimg" data-noaft="1" style="width: 500px; height: 300px;">
+    <ul>
+        <li><a href = "https://quizizz.com/">Quizizz</a></li>
+        <li><a href = "https://www.baamboozle.com/">Bamboozle</a></li>
+        <li><a href = "https://wordwall.net/">Wordwall</a></li>
+    </ul>
+</div>
+</div>
+<script>
+    alert('This is just for educational reference. These can help you and your organisation for any uses. Hope you\'re fine!');
+    function content(){
+        alert('Best Websites, Best Universities, What is Science?, The Art Of Science, Visual Aids, Best Museums to visit, Best apps for programming and Interactive quizzes!');
+    };
+    function rules(){
+        alert('1.Use the information for appropiate content only.\n 2.Don\'t copy all of this content.\n 3.Don\'t sell this information or use it for ANY reason.');
+    };
+    function one(){
+        alert('In MIT(Scratch), Zooniverse, cs50 and Github.');
+    };
+    function two(){
+        alert('I made this website because I want people to know the art and power of science, and I want the people of the world to get every single piece of knowledge as their opportunity.');
+    };
+    function three(){
+        alert('Because, In Youtube, you can watch educational Videos, meanwhile in Alibaba and Amazon, you can buy educational books or things.')
+    };
+</script>
+
+<div class="footer">
+    <h2>Copyright©AvarTech/2021/</h2>
+</div>
+</body>
+</html>
